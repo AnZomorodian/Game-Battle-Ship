@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Theme Colors */
+  --color-deep-sea-primary: #3b82f6;
+  --color-deep-sea-bg: #020617;
+
+  --color-radar-primary: #22c55e;
+  --color-radar-bg: #000000;
+
+  --color-classic-primary: #64748b;
+  --color-classic-bg: #1e293b;
+
+  --color-neon-primary: #f472b6; /* pink-400 */
+  --color-neon-bg: #0f172a; /* slate-900 */
+
+  --color-arctic-primary: #7dd3fc; /* sky-300 */
+  --color-arctic-bg: #f8fafc; /* slate-50 */
+
+  --color-volcanic-primary: #f97316; /* orange-500 */
+  --color-volcanic-bg: #0c0a09; /* stone-950 */
+}
+
+/* Custom Utilities */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+.animate-spin-slow {
+  animation: spin 8s linear infinite;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #020617; /* slate-950 */
+}
+
+/* Custom scrollbar for that tech look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.8);
+}

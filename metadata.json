@@ -1,0 +1,6 @@
+{
+  "name": "Ship War Multiplayer",
+  "description": "A real-time multiplayer battleship-style game where players battle for naval supremacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
